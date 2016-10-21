@@ -1,4 +1,4 @@
-package ru.noties.avt;
+package ru.noties.vt;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

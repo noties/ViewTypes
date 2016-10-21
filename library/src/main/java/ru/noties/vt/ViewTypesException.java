@@ -1,4 +1,4 @@
-package ru.noties.avt;
+package ru.noties.vt;
 
 class ViewTypesException extends IllegalStateException {
 

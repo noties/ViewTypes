@@ -1,4 +1,4 @@
-package ru.noties.avt;
+package ru.noties.vt;
 
 @SuppressWarnings("WeakerAccess")
 public interface OnItemClickListener<T, H extends Holder> {

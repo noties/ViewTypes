@@ -1,4 +1,4 @@
-package ru.noties.avt.sample;
+package ru.noties.vt.sample;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import ru.noties.avt.HolderSingle;
-import ru.noties.avt.ViewType;
+import ru.noties.vt.HolderSingle;
+import ru.noties.vt.ViewType;
 
 public class ViewTypeTwo extends ViewType<MainActivity.Two, HolderSingle<TextView>> {
 

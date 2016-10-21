@@ -1,4 +1,4 @@
-package ru.noties.avt.sample;
+package ru.noties.vt.sample;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,12 +12,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import ru.noties.avt.DiffUtilDataSetChanged;
-import ru.noties.avt.Holder;
-import ru.noties.avt.HolderSingle;
-import ru.noties.avt.NotifyDataSetChanged;
-import ru.noties.avt.OnItemClickListener;
-import ru.noties.avt.ViewTypesAdapter;
+import ru.noties.vt.Holder;
+import ru.noties.vt.HolderSingle;
+import ru.noties.vt.NotifyDataSetChanged;
+import ru.noties.vt.OnItemClickListener;
+import ru.noties.vt.ViewTypesAdapter;
 import ru.noties.debug.Debug;
 import ru.noties.debug.out.AndroidLogDebugOutput;
 

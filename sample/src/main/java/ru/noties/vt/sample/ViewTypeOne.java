@@ -1,4 +1,4 @@
-package ru.noties.avt.sample;
+package ru.noties.vt.sample;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-import ru.noties.avt.ViewType;
+import ru.noties.vt.ViewType;
 
 /**
  * Created by Dimitry Ivanov on 24.09.2016.

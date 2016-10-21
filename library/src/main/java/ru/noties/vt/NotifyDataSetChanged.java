@@ -1,4 +1,4 @@
-package ru.noties.avt;
+package ru.noties.vt;
 
 import java.util.List;
 

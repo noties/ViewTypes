@@ -1,10 +1,10 @@
-package ru.noties.avt.sample;
+package ru.noties.vt.sample;
 
 import android.support.annotation.IdRes;
 import android.view.View;
 import android.widget.TextView;
 
-import ru.noties.avt.Holder;
+import ru.noties.vt.Holder;
 
 /**
  * Created by Dimitry Ivanov on 24.09.2016.

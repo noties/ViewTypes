@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion SDK_VERSION as int
+    buildToolsVersion BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        applicationId "ru.noties.avt.sample"
+        minSdkVersion MIN_SDK_VERSION as int
+        targetSdkVersion SDK_VERSION as int
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize '4g'
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'ru.noties:debug:2.0.2@jar'
+    compile project(':library')
+}

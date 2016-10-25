@@ -22,3 +22,7 @@ dependencies {
     provided 'com.android.support:recyclerview-v7:25.0.0'
     provided 'com.android.support:support-annotations:25.0.0'
 }
+
+if (project.hasProperty('NEXUS_USERNAME')) {
+    apply from: 'https://raw.githubusercontent.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+}

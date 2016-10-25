@@ -19,11 +19,11 @@ public class ViewTypeTwo extends ViewType<MainActivity.Two, HolderSingle<TextVie
 
     @Override
     protected void bindView(Context context, HolderSingle<TextView> holder, MainActivity.Two item, List<Object> payloads) {
-        holder.view.setText(item.value);
+        holder.view.setText(item.oneValue);
     }
 
     @Override
     public long itemId(MainActivity.Two item) {
-        return item.value.hashCode();
+        return item.oneValue.hashCode();
     }
 }

@@ -20,11 +20,11 @@ public class ViewTypeOne extends ViewType<MainActivity.One, TextViewHolder> {
 
     @Override
     public void bindView(Context context, TextViewHolder holder, MainActivity.One item, List<Object> payloads) {
-        holder.text.setText(item.getClass().getName() + ": " + item.value);
+        holder.text.setText(item.getClass().getName() + ": " + item.oneValue);
     }
 
     @Override
     public long itemId(MainActivity.One item) {
-        return item.value.hashCode();
+        return item.oneValue.hashCode();
     }
 }

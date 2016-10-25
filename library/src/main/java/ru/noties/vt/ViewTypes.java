@@ -90,7 +90,7 @@ public class ViewTypes {
         return mViewTypes[assignedViewType];
     }
 
-    public int assignedViewType(@NonNull Object item) {
+    public int assignedViewType(@NonNull Object item) throws ViewTypesException {
         return assignedViewType(item.getClass());
     }
 

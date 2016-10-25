@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 .registerOnClickListener(new OnItemClickListener<One, Holder>() {
                     @Override
                     public void onItemClick(One item, Holder holder) {
-                        Debug.i("class: `%s`, value: %s", item.getClass().getSimpleName(), item.value);
+                        Debug.i("class: `%s`, value: %s", item.getClass().getSimpleName(), item.oneValue);
                     }
                 })
                 .build(this);
@@ -69,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
                         list = new ArrayList<>();
                         for (int i = 0; i < 10; i++) {
                             list.add(new One("Item " + i));
-                            list.add(new Two("Item " + i * 2));
-                            list.add(new Three("Item " + i * 3));
+                            list.add(new Two("Item " + i * 2, i));
+                            list.add(new Three("Item " + i * 3, i, 2.F * i));
                         }
                     } else {
                         //noinspection unchecked
@@ -85,22 +85,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     class One {
-        String value;
-        One(String value) {
-            this.value = value;
+
+        String oneValue;
+
+        One(String oneValue) {
+            this.oneValue = oneValue;
         }
     }
 
     class Two extends One {
-        Two(String value) {
+
+        int twoValue;
+
+        Two(String value, int twoValue) {
             super(value);
+            this.twoValue = twoValue;
         }
     }
 
     class Three extends Two {
 
-        Three(String value) {
-            super(value);
+        float threeValue;
+
+        Three(String value, int twoValue, float threeValue) {
+            super(value, twoValue);
+            this.threeValue = threeValue;
         }
     }
 }
